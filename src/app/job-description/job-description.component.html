@@ -1,0 +1,10 @@
+<div>
+    <h4 class="position-title">{{position.title}}</h4>
+    <label class="position-company">{{position.company}}</label>
+    <span class="position-description">{{position.description}}</span>
+    <div class="text-center">
+        <button type="submit" *ngIf="retractButtonVisible" class="btn custom-button" (click)="retractFromPosition(position)">RETRACT</button>
+        <button type="submit" *ngIf="!retractButtonVisible" [disabled]="!retractButtonVisible && !applyButtonVisible" class="btn custom-button"
+            (click)="applyForPosition(position)">APPLY</button>
+    </div>
+</div>

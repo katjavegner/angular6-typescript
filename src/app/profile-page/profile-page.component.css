@@ -1,0 +1,15 @@
+.profile-title {
+  text-align: left;
+  margin-bottom: 2rem;
+}
+
+.form-group {
+  margin-top: 1rem;
+}
+.form-control {
+  border: none;
+  border-bottom: 1px solid var(--gray-lighter);
+  border-radius: 0;
+  color: var(--text);
+  padding-left: 0;
+}

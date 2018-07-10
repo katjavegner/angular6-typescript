@@ -1,1 +1,65 @@
-/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+@import '~material-design-icons/iconfont/material-icons.css';
+
+app-root{
+--green: rgb(109,229,185);
+--purple:  rgb(96,39,148);
+--orange: rgb(236,163,58);
+--black: rgb(33,33,33);
+--gray-light: rgb(246,246,246);
+--gray-lighter: rgb(241,241,241);
+--gray:rgb(229,229,229);
+--gray-dark: rgb(160,161,163);
+--gray-darker: rgb(118,119,119);
+--white: rgb(255,255,255);
+
+--icon-color: var(--green);
+--navbar-color: var(--purple);
+--navbar-text: var(--white);
+--alert-color: var(--orange);
+--alert-backgroud: var();
+--alert-text: var(--orange);
+--app-background: var(--gray-light);
+--text: var(--black);
+--subtitle: var(--gray-darker);
+--text-background: var(--white);
+--button-disabled-background: var(--gray);
+--button-disabled-text: var(--gray-dark);
+--button-background: var(--green);
+--button-text: var(--white);
+}
+
+
+html{
+    height: 100%;
+}
+body {
+    font-weight: 400;
+    background: var(--app-background);
+    color: var(--text);
+    height: 100%;
+}
+
+.custom-card{
+    background: var(--text-background);
+    padding: 5rem;
+    box-shadow: 3px 5px 22px -2px rgba(0,0,0,0.75);
+    margin-top: 5%;
+    border-radius: 5px;
+}
+
+.custom-button{
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    color: var(--button-text);
+    background-color: var(--button-background);
+    margin-top: 2rem;
+    font-size: 20px;
+}
+
+.btn:disabled{
+    color: var(--button-disabled-text);
+    background-color: var(--button-disabled-background);
+    opacity: 1;
+}
